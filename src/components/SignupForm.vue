@@ -20,6 +20,8 @@
       </div>
       <button class="submit-button" type="submit">Submit</button>
     </form>
+        <p>Already have an account? <router-link to="/login">Login</router-link> here</p>
+
   </div>
 </template>
 

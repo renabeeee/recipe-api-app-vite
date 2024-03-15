@@ -6,9 +6,7 @@
 </template>
 
 <script>
-import router from './router'; // Import the router instance
-// import SignupForm from './components/SignupForm.vue';
-
+import router from './router';
 
 export default {
   name: 'App',
