@@ -1,20 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Cookable logo" src="https://cookable-api.s3.us-west-1.amazonaws.com/Cookable.svg" width="200px"> <SignupForm />
-    <LoginForm />
+    <img alt="Cookable logo" src="https://cookable-api.s3.us-west-1.amazonaws.com/Cookable.svg" width="200px">
+    <router-view />
   </div>
 </template>
 
 <script>
-import LoginForm from './components/LoginForm.vue'
-import SignupForm from './components/SignupForm.vue'
+import router from './router'; // Import the router instance
+// import SignupForm from './components/SignupForm.vue';
+
 
 export default {
   name: 'App',
   components: {
-    LoginForm,
-    SignupForm,
-  }
+
+  },
+  provide() {
+    return {
+      router,
+    };
+  },
 }
 </script>
 
