@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import SignupForm from "./components/SignupForm.vue";
 import LoginForm from "./components/LoginForm.vue";
+import PantryIndex from "./components/PantryIndex.vue";
 
 const routes = [
   {
@@ -17,6 +18,11 @@ const routes = [
     path: "/login",
     name: "login",
     component: LoginForm,
+  },
+  {
+    path: "/my-pantry",
+    name: "my-pantry",
+    component: PantryIndex,
   },
 ];
 

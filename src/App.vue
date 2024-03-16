@@ -1,8 +1,7 @@
 <template>
-  <div id="app">
-    <img alt="Cookable logo" src="https://cookable-api.s3.us-west-1.amazonaws.com/Cookable.svg" width="200px">
+ 
     <router-view />
-  </div>
+ 
 </template>
 
 <script>

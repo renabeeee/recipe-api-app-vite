@@ -1,4 +1,8 @@
 <template>
+<div id="app">
+    <img alt="Cookable logo" src="https://cookable-api.s3.us-west-1.amazonaws.com/Cookable.svg" width="200px">
+    <router-view />
+  </div>
   <div class="main">
     <h2 class="header-text">Create An Account</h2>
     <ul>
@@ -68,5 +72,5 @@ export default {
 </script>
 
 <style>
-/* Add your CSS styles here */
+/* Add CSS styles here */
 </style>

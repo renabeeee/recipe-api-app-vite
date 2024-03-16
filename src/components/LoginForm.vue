@@ -1,4 +1,8 @@
 <template>
+  <div id="app">
+    <img alt="Cookable logo" src="https://cookable-api.s3.us-west-1.amazonaws.com/Cookable.svg" width="200px">
+    <router-view />
+  </div>
   <div id="login">
     <div class="main">
       <div class="header-text">
@@ -18,11 +22,12 @@
         </div>
         <button class="submit-button" type="submit">Login</button>
       </form>
+      </div>
     </div>
     <div class="signout" v-if="jwt">
       <SignoutComponent @signout="handleSignout" />
     </div>
-  </div>
+  <p> Need to sign up? <router-link to="/signup">Create an account</router-link> </p>
 </template>
 
 <script>
@@ -57,7 +62,7 @@ created() {
             "Bearer " + response.data.jwt;
           localStorage.setItem("jwt", response.data.jwt);
           event.target.reset();
-          window.location.href = "/";
+          window.location.href = "/my-pantry";
         })
         .catch((error) => {
           console.log(error.response);
@@ -69,5 +74,5 @@ created() {
 </script>
 
 <style scoped>
-/* Add your component-specific styles here */
+/* Add component-specific styles here */
 </style>
