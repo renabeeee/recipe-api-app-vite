@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="logo">
     <img alt="Cookable logo" src="https://cookable-api.s3.us-west-1.amazonaws.com/Cookable.svg" width="200px">
     <router-view />
   </div>
@@ -32,7 +32,7 @@
 
 <script>
 import axios from "axios";
-import SignoutComponent from './SignoutComponent.vue';
+import SignoutComponent from '../buttons/SignoutComponent.vue';
 
 export default {
   name: "LoginForm",
