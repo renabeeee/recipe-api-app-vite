@@ -1,23 +1,19 @@
 <template>
- 
-    <router-view />
- 
+  <router-view />
 </template>
 
 <script>
-import router from './router';
+import router from "./router";
 
 export default {
-  name: 'App',
-  components: {
-
-  },
+  name: "App",
+  components: {},
   provide() {
     return {
       router,
     };
   },
-}
+};
 </script>
 
 <style scoped>

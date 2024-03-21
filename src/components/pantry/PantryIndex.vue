@@ -11,5 +11,17 @@
         </div>
       </div>
     </div>
+    <Header />
   </div>
 </template>
+
+<script>
+import Header from "/Users/serenagreen/recipe-api-app-vite/src/components/header/Header.vue";
+
+export default {
+  name: "App",
+  components: {
+    Header,
+  },
+};
+</script>

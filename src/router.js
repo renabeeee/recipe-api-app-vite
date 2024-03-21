@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import SignupForm from "./components/buttons/signup/SignupForm.vue";
+import SignupForm from "./components/signup/SignupForm.vue";
+import SignoutComponent from "./components/buttons/SignoutComponent.vue";
 import LoginForm from "./components/login/LoginForm.vue";
 import PantryIndex from "./components/pantry/PantryIndex.vue";
 
