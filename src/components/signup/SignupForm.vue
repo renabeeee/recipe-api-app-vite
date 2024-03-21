@@ -60,8 +60,7 @@
     <div class="link">
       <p>
         Already have an account?
-        <router-link to="/login">Login</router-link>
-        here
+        <router-link to="/login">Login here</router-link>
       </p>
     </div>
   </div>

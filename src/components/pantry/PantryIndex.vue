@@ -1,17 +1,10 @@
 <template>
   <div>
-    <div className="navbar border-bottom border-body">
-      <div className="container-fluid">
-        <div className="navbar-brand" href="/">
-          <img
-            src="https://cookable-api.s3.us-west-1.amazonaws.com/Cookable.svg"
-            alt="Logo"
-            width="200"
-          />
-        </div>
-      </div>
-    </div>
     <Header />
+  </div>
+  <div class="index">
+    <br />
+    <p>Here is a list of all the ingredients you have in your pantry:</p>
   </div>
 </template>
 
@@ -25,3 +18,16 @@ export default {
   },
 };
 </script>
+
+<style>
+.index {
+  max-width: 1280px;
+  padding: 2rem;
+}
+
+p {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
