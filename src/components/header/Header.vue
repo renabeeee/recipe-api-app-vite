@@ -25,7 +25,33 @@
         Signout
       </a>
     </li>
+    <div class="user-info">
+      <img
+        src="https://hackspirit.com/wp-content/uploads/2021/06/Copy-of-Rustic-Female-Teen-Magazine-Cover.jpg"
+        alt="User Avatar"
+      />
+    </div>
   </ul>
+  <div class="key">
+    <div class="key-red-box">
+      <img
+        src="https://cookable-api.s3.us-west-1.amazonaws.com/blue-box.svg"
+        alt="Blue Box"
+        width="14"
+        height="14"
+        style="margin-right: 5px"
+      />
+      Add ingredient
+    </div>
+    <img
+      src="https://cookable-api.s3.us-west-1.amazonaws.com/red-box.svg"
+      alt="Red Box"
+      width="14"
+      height="14"
+      style="margin-right: 5px"
+    />
+    Remove ingredient
+  </div>
 </template>
 
 <script>
@@ -47,11 +73,19 @@ export default {
   padding: 2rem;
 }
 
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 0px;
+  margin-right: 20px;
+  float: right;
+}
+
 .welcome-msg {
   color: #333;
-  font-size: 14px;
   display: inline-block;
-  margin-top: 11px;
+  margin-top: 10px;
   margin-right: 10px;
 }
 </style>
