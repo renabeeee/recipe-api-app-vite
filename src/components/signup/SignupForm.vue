@@ -1,15 +1,17 @@
 <template>
   <div class="container">
     <div id="app" class="logo">
-      <img
-        alt="Cookable logo"
-        src="https://cookable-api.s3.us-west-1.amazonaws.com/Cookable.svg"
-        width="200px"
-      />
+      <a href="http://localhost:5173">
+        <img
+          alt="Cookable logo"
+          src="https://cookable-api.s3.us-west-1.amazonaws.com/Cookable.svg"
+          width="180"
+        />
+      </a>
       <router-view />
     </div>
     <div class="main">
-      <h2 class="header-text">Create An Account</h2>
+      <h2 class="h3">Create An Account</h2>
       <ul>
         <li v-for="error in errors" :key="error">{{ error }}</li>
       </ul>
@@ -92,7 +94,7 @@ export default {
         .post("http://localhost:3000/users.json", params)
         .then((response) => {
           console.log(response.data);
-          window.location.href = "http://localhost:8080/my-pantry";
+          window.location.href = "http://localhost:5173/my-pantry";
         })
         .catch((error) => {
           if (
@@ -123,11 +125,11 @@ export default {
   align-items: center;
 }
 
-.header-text {
+.h3 {
   font-size: 24px;
   color: #333;
   font-weight: bold;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 40px;
   display: flex;
   justify-content: center;

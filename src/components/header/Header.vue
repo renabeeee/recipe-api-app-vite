@@ -1,10 +1,12 @@
 <template>
   <div class="logo" style="float: left">
-    <img
-      src="https://cookable-api.s3.us-west-1.amazonaws.com/Cookable.svg"
-      alt="Logo"
-      width="200"
-    />
+    <a href="http://localhost:5173">
+      <img
+        src="https://cookable-api.s3.us-west-1.amazonaws.com/Cookable.svg"
+        alt="Logo"
+        width="180"
+      />
+    </a>
   </div>
   <ul class="nav justify-content-end">
     <div class="welcome-msg">
@@ -37,8 +39,8 @@
       <img
         src="https://cookable-api.s3.us-west-1.amazonaws.com/blue-box.svg"
         alt="Blue Box"
-        width="14"
-        height="14"
+        width="12"
+        height="12"
         style="margin-right: 5px"
       />
       Add ingredient
