@@ -59,12 +59,12 @@
 
 <script>
 import axios from "axios";
-import SignoutComponent from "../buttons/SignoutComponent.vue";
+// import SignoutComponent from "../buttons/SignoutComponent.vue";
 
 export default {
   name: "LoginForm",
   components: {
-    SignoutComponent,
+    // SignoutComponent,
   },
   data() {
     return {

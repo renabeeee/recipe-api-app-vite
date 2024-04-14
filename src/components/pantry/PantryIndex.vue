@@ -342,7 +342,7 @@
         src="https://cookable-api.s3.us-west-1.amazonaws.com/Generate-button-stars.png"
         alt="Generate Icon"
       />
-      Update pantry
+      <div class="button-text">Update pantry</div>
     </button>
   </div>
   <div class="generate-recipes-button">
@@ -351,7 +351,7 @@
         src="https://cookable-api.s3.us-west-1.amazonaws.com/Generate-button-stars.png"
         alt="Generate Icon"
       />
-      <div class="text">Generate recipes</div>
+      <div class="button-text">Generate recipes</div>
     </button>
   </div>
 </template>
@@ -473,6 +473,10 @@ h5 {
 .index {
   max-width: 1280px;
   padding: 2rem;
+}
+
+.button-text {
+  margin-left: 15px;
 }
 
 p {

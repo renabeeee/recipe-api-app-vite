@@ -84,30 +84,25 @@ export default {
     };
   },
   methods: {
-    handleSubmit() {
+    async handleSubmit(event) {
       this.errors = [];
-      const params = new FormData();
-      for (let key in this.formData) {
-        params.append(key, this.formData[key]);
+      const params = new FormData(event.target);
+      try {
+        const response = await axios.post(
+          "http://localhost:3000/sessions.json",
+          params
+        );
+        console.log(response.data);
+        axios.defaults.headers.common[
+          "Authorization"
+        ] = `Bearer ${response.data.jwt}`;
+        localStorage.setItem("jwt", response.data.jwt);
+        event.target.reset();
+        window.location.href = "http://localhost:5173/my-pantry";
+      } catch (error) {
+        console.error(error.response);
+        this.errors = ["Invalid email or password"];
       }
-      axios
-        .post("http://localhost:3000/users.json", params)
-        .then((response) => {
-          console.log(response.data);
-          window.location.href = "http://localhost:5173/my-pantry";
-        })
-        .catch((error) => {
-          if (
-            error.response &&
-            error.response.data &&
-            error.response.data.errors
-          ) {
-            console.log(error.response.data.errors);
-            this.errors = error.response.data.errors;
-          } else {
-            console.error("An unexpected error occurred:", error);
-          }
-        });
     },
   },
 };
