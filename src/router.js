@@ -24,6 +24,15 @@ const routes = [
     path: "/my-pantry",
     name: "my-pantry",
     component: PantryIndex,
+
+    beforeEnter: (to, from, next) => {
+      const jwt = localStorage.getItem("jwt");
+      if (jwt) {
+        next();
+      } else {
+        next("/login");
+      }
+    },
   },
 ];
 
