@@ -88,10 +88,18 @@ export default {
       this.errors = [];
       const params = new FormData(event.target);
       try {
+        await axios.post("http://localhost:3000/users.json", {
+          first_name: this.formData.first_name,
+          last_name: this.formData.last_name,
+          email: this.formData.email,
+          password: this.formData.password,
+        });
+
         const response = await axios.post(
           "http://localhost:3000/sessions.json",
           params
         );
+
         console.log(response.data);
         axios.defaults.headers.common[
           "Authorization"
