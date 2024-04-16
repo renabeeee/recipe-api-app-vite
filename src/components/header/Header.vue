@@ -10,7 +10,7 @@
   </div>
   <ul class="nav justify-content-end">
     <div class="welcome-msg">
-      <p>Welcome, Serena!</p>
+      <p>Welcome, {{ userFirstName }}</p>
     </div>
     <li class="nav-item">
       <a
@@ -57,8 +57,35 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
-  // ...
+  data() {
+    return {
+      userFirstName: null,
+    };
+  },
+
+  mounted() {
+    this.fetchUserFirstName();
+  },
+
+  methods: {
+    fetchUserFirstName() {
+      axios
+        .get("http://localhost:3000/users/username.json", {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("jwt")}`,
+          },
+        })
+        .then((response) => {
+          this.userFirstName = response.data.first_name;
+        })
+        .catch((error) => {
+          console.error("Error fetching user info:", error);
+        });
+    },
+  },
 };
 </script>
 
