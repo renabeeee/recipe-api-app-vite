@@ -10,7 +10,7 @@
   </div>
   <ul class="nav justify-content-end">
     <div class="welcome-msg">
-      <p>Welcome, {{ userFirstName }}</p>
+      <p>{{ userFirstName }}'s Dashboard</p>
     </div>
     <li class="nav-item">
       <a
