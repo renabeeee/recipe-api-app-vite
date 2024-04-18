@@ -28,10 +28,7 @@
       </a>
     </li>
     <div class="user-info">
-      <img
-        src="https://hackspirit.com/wp-content/uploads/2021/06/Copy-of-Rustic-Female-Teen-Magazine-Cover.jpg"
-        alt="User Avatar"
-      />
+      <img :src="userProfileImage" alt="User Avatar" />
     </div>
   </ul>
   <div class="key">
@@ -63,15 +60,16 @@ export default {
   data() {
     return {
       userFirstName: null,
+      userProfileImage: null,
     };
   },
 
   mounted() {
-    this.fetchUserFirstName();
+    this.fetchUserInfo();
   },
 
   methods: {
-    fetchUserFirstName() {
+    fetchUserInfo() {
       axios
         .get("http://localhost:3000/users/username.json", {
           headers: {
@@ -80,9 +78,24 @@ export default {
         })
         .then((response) => {
           this.userFirstName = response.data.first_name;
+          this.fetchProfileImage();
         })
         .catch((error) => {
           console.error("Error fetching user info:", error);
+        });
+    },
+    fetchProfileImage() {
+      axios
+        .get("http://localhost:3000/users/profile_image.json", {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("jwt")}`,
+          },
+        })
+        .then((response) => {
+          this.userProfileImage = response.data.profile_image;
+        })
+        .catch((error) => {
+          console.error("Error fetching profile image:", error);
         });
     },
   },
@@ -109,6 +122,8 @@ export default {
   margin-top: 0px;
   margin-right: 20px;
   float: right;
+  border: 1px solid #767373;
+  padding: 5px;
 }
 
 .welcome-msg {
