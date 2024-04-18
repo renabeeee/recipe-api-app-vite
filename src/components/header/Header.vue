@@ -23,9 +23,13 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" style="color: #051789; font-weight: bold" href="#">
+      <router-link
+        to="/signout"
+        class="nav-link"
+        style="color: #051789; font-weight: bold"
+      >
         Signout
-      </a>
+      </router-link>
     </li>
     <div class="user-info">
       <img :src="userProfileImage" alt="User Avatar" />
