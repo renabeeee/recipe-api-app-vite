@@ -13,16 +13,6 @@
       <p>{{ userFirstName }}'s Dashboard</p>
     </div>
     <li class="nav-item">
-      <a
-        class="nav-link"
-        style="color: #051789; font-weight: bold"
-        aria-current="page"
-        href="#"
-      >
-        Home
-      </a>
-    </li>
-    <li class="nav-item">
       <router-link
         to="/signout"
         class="nav-link"
@@ -125,15 +115,15 @@ export default {
   border-radius: 50%;
   margin-top: 0px;
   margin-right: 20px;
+  margin-left: 20px;
+
   float: right;
-  border: 1px solid #767373;
-  padding: 5px;
 }
 
 .welcome-msg {
   color: #333;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-right: 10px;
 }
 </style>
