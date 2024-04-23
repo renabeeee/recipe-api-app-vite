@@ -30,8 +30,8 @@
       <img
         src="https://cookable-api.s3.us-west-1.amazonaws.com/blue-box.svg"
         alt="Blue Box"
-        width="12"
-        height="12"
+        width="14"
+        height="14"
         style="margin-right: 5px"
       />
       Add ingredient

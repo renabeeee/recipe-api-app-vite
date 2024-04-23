@@ -10,112 +10,114 @@
   <div class="container">
     <div class="pantry-column">
       <h5>Baking and Spices</h5>
+
       <ul class="pantry-list" id="baking-list">
         <li class="pantry-item">
-          <label class="checkbox-label" for="baking-powder">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="baking-powder" />
-            Baking powder
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[2] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="baking-soda">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="baking-soda" />
-            Baking soda
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[3] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="brown-sugar">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="brown-sugar" />
-            Brown sugar
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[4] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="cocoa-powder">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="cocoa-powder" />
-            Cocoa powder
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[5] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="granulated-sugar">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input
-              type="checkbox"
-              class="checkbox-input"
-              id="granulated-sugar"
-            />
-            Granulated sugar
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[6] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="italian-seasoning">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input
-              type="checkbox"
-              class="checkbox-input"
-              id="italian-seasoning"
-            />
-            Italian seasoning
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[7] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="ketchup">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="ketchup" />
-            Ketchup
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[8] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="pepper">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="pepper" />
-            Pepper
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[0] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="salt">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="salt" />
-            Salt
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[1] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="tomato-sauce">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="tomato-sauce" />
-            Tomato sauce
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[9] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="tumeric">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="tumeric" />
-            Tumeric
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[10] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="vanilla-extract">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input
-              type="checkbox"
-              class="checkbox-input"
-              id="vanilla-extract"
-            />
-            Vanilla extract
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[11] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="vinegar">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="vinegar" />
-            Vinegar
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[12] }}
           </label>
         </li>
       </ul>
     </div>
+
     <div class="pantry-column">
       <h5>Proteins</h5>
       <ul>
@@ -357,12 +359,48 @@
 </template>
 
 <script>
+import axios from "axios";
+
 import Header from "/Users/serenagreen/recipe-api-app-vite/src/components/header/Header.vue";
 
 export default {
   name: "App",
   components: {
     Header,
+  },
+
+  data() {
+    return {
+      ingredientName: [],
+    };
+  },
+
+  mounted() {
+    this.fetchIngredientInfo();
+  },
+
+  methods: {
+    fetchIngredientInfo() {
+      axios
+        .get("http://localhost:3000/ingredients.json", {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("jwt")}`,
+          },
+        })
+        .then((response) => {
+          if (Array.isArray(response.data) && response.data.length >= 6) {
+            this.ingredientName = response.data.map(
+              (ingredient) => ingredient.name
+            );
+          } else {
+            console.error("Invalid response data format or insufficient data.");
+          }
+        })
+
+        .catch((error) => {
+          console.error("Error fetching ingredient info:", error);
+        });
+    },
   },
 };
 </script>
