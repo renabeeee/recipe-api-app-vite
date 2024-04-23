@@ -304,49 +304,50 @@
       <h5>Grains and Starches</h5>
       <ul>
         <li class="pantry-item">
-          <label class="checkbox-label" for="all-purpose-flour">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input
-              type="checkbox"
-              class="checkbox-input"
-              id="all-purpose-flour"
-            />
-            All-purpose flour
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[32] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="bread-crumbs">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="bread-crumbs" />
-            Bread crumbs
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[33] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="corn">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="corn" />
-            Corn
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[34] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="jasmine-rice">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="jasmine-rice" />
-            Jasmine rice
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[35] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="noodles">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="noodles" />
-            Noodles
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[36] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="rice-flour">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="rice-flour" />
-            Rice flour
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[37] }}
           </label>
         </li>
       </ul>
