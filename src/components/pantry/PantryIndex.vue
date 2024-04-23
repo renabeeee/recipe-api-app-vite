@@ -122,165 +122,180 @@
       <h5>Proteins</h5>
       <ul>
         <li class="pantry-item">
-          <label class="checkbox-label" for="eggs">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="eggs" />
-            Eggs
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[16] }}
           </label>
         </li>
         <li class="pantry-item">
-          <label class="checkbox-label" for="ground-beef">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="ground-beef" />
-            Ground beef
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[17] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="milk">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="milk" />
-            Milk
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[13] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="cheese">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="cheese" />
-            Cheese
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[14] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="collagen-powder">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input
-              type="checkbox"
-              class="checkbox-input"
-              id="collagen-powder"
-            />
-            Collagen powder
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[15] }}
           </label>
         </li>
       </ul>
+
       <h5>Fruits</h5>
       <ul class="pantry-list" id="fruits-list">
         <li class="pantry-item">
-          <label class="checkbox-label" for="blueberries">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="blueberries" />
-            Blueberries
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[18] }}
           </label>
         </li>
       </ul>
+
       <h5>Fats and Oils</h5>
       <ul class="pantry-list" id="fats-oils-list">
         <li class="pantry-item">
-          <label class="checkbox-label" for="butter">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="butter" />
-            Butter (salted or unsalted)
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[38] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="olive-oil">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="olive-oil" />
-            Olive oil
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[39] }}
           </label>
         </li>
       </ul>
     </div>
+
     <div class="pantry-column">
       <h5>Vegetables</h5>
       <ul>
         <li class="pantry-item">
-          <label class="checkbox-label" for="bell-peppers">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="bell-peppers" />
-            Bell peppers
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[23] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="brown-rice">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="brown-rice" />
-            Brown rice
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[22] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="carrot">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="carrot" />
-            Carrot
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[21] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="garlic">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="garlic" />
-            Garlic
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[20] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="green-beans">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="green-beans" />
-            Green beans
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[19] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="kale">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="kale" />
-            Kale
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[24] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="mixed-greens">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="mixed-greens" />
-            Mixed greens
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[25] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="onion">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="onion" />
-            Onion
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[26] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="peas">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="peas" />
-            Peas
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[27] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="russet-potato">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="russet-potato" />
-            Russet potato
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[28] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="sweet-potato">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="sweet-potato" />
-            Sweet potato
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[29] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="wild-rice">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="wild-rice" />
-            Wild rice
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[30] }}
           </label>
         </li>
+
         <li class="pantry-item">
-          <label class="checkbox-label" for="zucchini">
+          <label class="checkbox-label">
             <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" id="zucchini" />
-            Zucchini
+            <input type="checkbox" class="checkbox-input" />
+            {{ ingredientName[31] }}
           </label>
         </li>
       </ul>
