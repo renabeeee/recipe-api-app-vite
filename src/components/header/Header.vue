@@ -21,8 +21,43 @@
         Signout
       </router-link>
     </li>
+
     <div class="user-info">
-      <img :src="userProfileImage" alt="User Avatar" />
+      <div class="dropdown">
+        <a href="#" @click="handleImageClick">
+          <img :src="userProfileImage" alt="User Avatar" />
+        </a>
+      </div>
+
+      <ul class="dropdown-menu" :class="{ show: isDropdownOpen }">
+        <li>
+          <a
+            class="dropdown-item"
+            href="#"
+            @click="handleDropdownSelection('Settings')"
+          >
+            Settings
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item"
+            href="#"
+            @click="handleDropdownSelection('Edit Profile')"
+          >
+            Edit Profile
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item"
+            href="/logout"
+            @click="handleDropdownSelection('Logout')"
+          >
+            Logout
+          </a>
+        </li>
+      </ul>
     </div>
   </ul>
   <div class="key">
@@ -49,12 +84,15 @@
 
 <script>
 import axios from "axios";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 export default {
   data() {
     return {
       userFirstName: null,
       userProfileImage: null,
+      isDropdownOpen: false,
     };
   },
 
@@ -91,6 +129,13 @@ export default {
         .catch((error) => {
           console.error("Error fetching profile image:", error);
         });
+    },
+    handleImageClick() {
+      this.isDropdownOpen = !this.isDropdownOpen;
+    },
+    handleDropdownSelection(selection) {
+      console.log("Selected:", selection);
+      this.isDropdownOpen = false;
     },
   },
 };
