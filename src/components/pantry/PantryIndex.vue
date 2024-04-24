@@ -16,7 +16,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[2] }}
+            <div class="ingredient">
+              {{ ingredientName[2] }}
+            </div>
           </label>
         </li>
 
@@ -24,7 +26,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[3] }}
+            <div class="ingredient">
+              {{ ingredientName[3] }}
+            </div>
           </label>
         </li>
 
@@ -32,7 +36,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[4] }}
+            <div class="ingredient">
+              {{ ingredientName[4] }}
+            </div>
           </label>
         </li>
 
@@ -40,7 +46,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[5] }}
+            <div class="ingredient">
+              {{ ingredientName[5] }}
+            </div>
           </label>
         </li>
 
@@ -48,7 +56,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[6] }}
+            <div class="ingredient">
+              {{ ingredientName[6] }}
+            </div>
           </label>
         </li>
 
@@ -56,7 +66,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[7] }}
+            <div class="ingredient">
+              {{ ingredientName[7] }}
+            </div>
           </label>
         </li>
 
@@ -64,7 +76,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[8] }}
+            <div class="ingredient">
+              {{ ingredientName[8] }}
+            </div>
           </label>
         </li>
 
@@ -72,7 +86,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[0] }}
+            <div class="ingredient">
+              {{ ingredientName[0] }}
+            </div>
           </label>
         </li>
 
@@ -80,7 +96,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[1] }}
+            <div class="ingredient">
+              {{ ingredientName[1] }}
+            </div>
           </label>
         </li>
 
@@ -88,7 +106,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[9] }}
+            <div class="ingredient">
+              {{ ingredientName[9] }}
+            </div>
           </label>
         </li>
 
@@ -96,7 +116,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[10] }}
+            <div class="ingredient">
+              {{ ingredientName[10] }}
+            </div>
           </label>
         </li>
 
@@ -104,7 +126,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[11] }}
+            <div class="ingredient">
+              {{ ingredientName[11] }}
+            </div>
           </label>
         </li>
 
@@ -112,7 +136,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[12] }}
+            <div class="ingredient">
+              {{ ingredientName[12] }}
+            </div>
           </label>
         </li>
       </ul>
@@ -125,22 +151,18 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[16] }}
+            <div class="ingredient">
+              {{ ingredientName[16] }}
+            </div>
           </label>
         </li>
         <li class="pantry-item">
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[17] }}
-          </label>
-        </li>
-
-        <li class="pantry-item">
-          <label class="checkbox-label">
-            <span class="fill-in-box"></span>
-            <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[13] }}
+            <div class="ingredient">
+              {{ ingredientName[17] }}
+            </div>
           </label>
         </li>
 
@@ -148,7 +170,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[14] }}
+            <div class="ingredient">
+              {{ ingredientName[13] }}
+            </div>
           </label>
         </li>
 
@@ -156,29 +180,49 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[15] }}
+            <div class="ingredient">
+              {{ ingredientName[14] }}
+            </div>
+          </label>
+        </li>
+
+        <li class="pantry-item">
+          <label class="checkbox-label">
+            <span class="fill-in-box"></span>
+            <input type="checkbox" class="checkbox-input" />
+            <div class="ingredient">
+              {{ ingredientName[15] }}
+            </div>
           </label>
         </li>
       </ul>
 
-      <h5>Fruits</h5>
+      <div class="fruits-category">
+        <h5>Fruits</h5>
+      </div>
       <ul class="pantry-list" id="fruits-list">
         <li class="pantry-item">
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[18] }}
+            <div class="ingredient">
+              {{ ingredientName[18] }}
+            </div>
           </label>
         </li>
       </ul>
 
-      <h5>Fats and Oils</h5>
+      <div class="fats-and-oils-category">
+        <h5>Fats and Oils</h5>
+      </div>
       <ul class="pantry-list" id="fats-oils-list">
         <li class="pantry-item">
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[38] }}
+            <div class="ingredient">
+              {{ ingredientName[38] }}
+            </div>
           </label>
         </li>
 
@@ -186,7 +230,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[39] }}
+            <div class="ingredient">
+              {{ ingredientName[39] }}
+            </div>
           </label>
         </li>
       </ul>
@@ -199,7 +245,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[23] }}
+            <div class="ingredient">
+              {{ ingredientName[23] }}
+            </div>
           </label>
         </li>
 
@@ -207,7 +255,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[22] }}
+            <div class="ingredient">
+              {{ ingredientName[22] }}
+            </div>
           </label>
         </li>
 
@@ -215,7 +265,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[21] }}
+            <div class="ingredient">
+              {{ ingredientName[21] }}
+            </div>
           </label>
         </li>
 
@@ -223,7 +275,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[20] }}
+            <div class="ingredient">
+              {{ ingredientName[20] }}
+            </div>
           </label>
         </li>
 
@@ -231,7 +285,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[19] }}
+            <div class="ingredient">
+              {{ ingredientName[19] }}
+            </div>
           </label>
         </li>
 
@@ -239,7 +295,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[24] }}
+            <div class="ingredient">
+              {{ ingredientName[24] }}
+            </div>
           </label>
         </li>
 
@@ -247,7 +305,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[25] }}
+            <div class="ingredient">
+              {{ ingredientName[25] }}
+            </div>
           </label>
         </li>
 
@@ -255,7 +315,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[26] }}
+            <div class="ingredient">
+              {{ ingredientName[26] }}
+            </div>
           </label>
         </li>
 
@@ -263,7 +325,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[27] }}
+            <div class="ingredient">
+              {{ ingredientName[27] }}
+            </div>
           </label>
         </li>
 
@@ -271,7 +335,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[28] }}
+            <div class="ingredient">
+              {{ ingredientName[28] }}
+            </div>
           </label>
         </li>
 
@@ -279,7 +345,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[29] }}
+            <div class="ingredient">
+              {{ ingredientName[29] }}
+            </div>
           </label>
         </li>
 
@@ -287,7 +355,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[30] }}
+            <div class="ingredient">
+              {{ ingredientName[30] }}
+            </div>
           </label>
         </li>
 
@@ -295,7 +365,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[31] }}
+            <div class="ingredient">
+              {{ ingredientName[31] }}
+            </div>
           </label>
         </li>
       </ul>
@@ -307,7 +379,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[32] }}
+            <div class="ingredient">
+              {{ ingredientName[32] }}
+            </div>
           </label>
         </li>
 
@@ -315,7 +389,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[33] }}
+            <div class="ingredient">
+              {{ ingredientName[33] }}
+            </div>
           </label>
         </li>
 
@@ -323,7 +399,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[34] }}
+            <div class="ingredient">
+              {{ ingredientName[34] }}
+            </div>
           </label>
         </li>
 
@@ -331,7 +409,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[35] }}
+            <div class="ingredient">
+              {{ ingredientName[35] }}
+            </div>
           </label>
         </li>
 
@@ -339,7 +419,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[36] }}
+            <div class="ingredient">
+              {{ ingredientName[36] }}
+            </div>
           </label>
         </li>
 
@@ -347,7 +429,9 @@
           <label class="checkbox-label">
             <span class="fill-in-box"></span>
             <input type="checkbox" class="checkbox-input" />
-            {{ ingredientName[37] }}
+            <div class="ingredient">
+              {{ ingredientName[37] }}
+            </div>
           </label>
         </li>
       </ul>
@@ -430,10 +514,21 @@ export default {
   margin-bottom: 20px;
 }
 
+.ingredient {
+  margin-left: 8px;
+}
 .pantry-column {
   width: calc(25% - 20px);
   float: left;
   margin-bottom: 40px;
+}
+
+.fruits-category {
+  margin-top: 30px;
+}
+
+.fats-and-oils-category {
+  margin-top: 30px;
 }
 
 h1 {
@@ -453,6 +548,12 @@ h5 {
   margin-left: -60px;
 }
 
+.checkbox-input:checked + .fill-in-box::before {
+  content: "\2713";
+  color: #fff;
+  margin-left: 20px;
+}
+
 .checkbox-label {
   display: flex;
   align-items: center;
@@ -460,7 +561,7 @@ h5 {
   cursor: pointer;
 }
 
-.fill-in-box {
+/* .fill-in-box {
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -480,8 +581,8 @@ h5 {
 }
 
 .checkbox-input {
-  display: none; /* Hide the default checkbox input */
-}
+  display: none;
+} */
 
 .update-pantry-button,
 .generate-recipes-button {
@@ -518,7 +619,7 @@ h5 {
 
 .key {
   margin-left: auto;
-  margin-right: 40px;
+  margin-right: 50px;
   margin-top: 50px;
   text-align: left;
   float: right;
