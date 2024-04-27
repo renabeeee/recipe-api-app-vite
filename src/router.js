@@ -3,6 +3,7 @@ import SignupForm from "./components/signup/SignupForm.vue";
 import SignoutComponent from "./components/signout/SignoutComponent.vue";
 import LoginForm from "./components/login/LoginForm.vue";
 import PantryIndex from "./components/pantry/PantryIndex.vue";
+import EditProfile from "./components/profile/EditProfile.vue";
 
 const routes = [
   {
@@ -23,6 +24,10 @@ const routes = [
   {
     path: "/signout",
     component: SignoutComponent,
+  },
+  {
+    path: "/edit-profile",
+    component: EditProfile,
   },
   {
     path: "/my-pantry",

@@ -10,7 +10,7 @@
     </div>
     <div id="login">
       <div class="main">
-        <h2 class="header-text">Login</h2>
+        <h2 class="h3">Login</h2>
         <ul>
           <li v-for="error in errors" :key="error">{{ error }}</li>
         </ul>
@@ -104,6 +104,16 @@ export default {
 .container {
   max-width: 1024px;
   padding: 40px 15px;
+}
+
+.h3 {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
