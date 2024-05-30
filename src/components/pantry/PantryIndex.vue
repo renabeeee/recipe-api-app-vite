@@ -2,9 +2,43 @@
   <div>
     <Header />
   </div>
+  <div>
+    <div class="card mb-4">
+      <div class="card-header">
+        <h2 class="card-title">Welcome to Your Pantry</h2>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          Easily manage your ingredients and generate recipes based on what you
+          have in stock. Check the boxes for the ingredients you currently have,
+          and update your pantry or generate new recipes with a single click.
+        </p>
+      </div>
+    </div>
+  </div>
   <div class="index">
     <br />
-    <p>Here is a list of all the ingredients you have in your pantry:</p>
+    <!-- <div class="key">
+      <div class="key-red-box">
+        <img
+          src="https://cookable-api.s3.us-west-1.amazonaws.com/blue-box.svg"
+          alt="Blue Box"
+          width="14"
+          height="14"
+          style="margin-right: 5px"
+        />
+        Add ingredient
+      </div>
+      <img
+        src="https://cookable-api.s3.us-west-1.amazonaws.com/red-box.svg"
+        alt="Red Box"
+        width="14"
+        height="14"
+        style="margin-right: 5px"
+      />
+      Remove ingredient
+    </div> -->
+    <!-- <p>Here is a list of all the ingredients you have in your pantry:</p> -->
   </div>
 
   <div class="container">
@@ -627,7 +661,7 @@ h5 {
 
 .index {
   max-width: 1280px;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .button-text {
@@ -638,5 +672,29 @@ p {
   color: #333;
   text-decoration: none;
   font-weight: bold;
+}
+.card {
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.card-header {
+  background-color: #4285f4;
+  color: #fff;
+  padding: 1rem;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.card-body {
+  padding: 1rem;
 }
 </style>

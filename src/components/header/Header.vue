@@ -60,26 +60,6 @@
       </ul>
     </div>
   </ul>
-  <div class="key">
-    <div class="key-red-box">
-      <img
-        src="https://cookable-api.s3.us-west-1.amazonaws.com/blue-box.svg"
-        alt="Blue Box"
-        width="14"
-        height="14"
-        style="margin-right: 5px"
-      />
-      Add ingredient
-    </div>
-    <img
-      src="https://cookable-api.s3.us-west-1.amazonaws.com/red-box.svg"
-      alt="Red Box"
-      width="14"
-      height="14"
-      style="margin-right: 5px"
-    />
-    Remove ingredient
-  </div>
 </template>
 
 <script>
